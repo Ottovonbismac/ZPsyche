@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zpsyche - Student Blog</title>
+    <link rel="stylesheet" href="css.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to Zpsyche</h1>
+        <nav>
+            <ul>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#study-help">Study Help</a></li>
+                <li><a href="#religious-coping">Religious Coping</a></li>
+                <li><a href="#offline-game">Offline Game</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="blogs">
+            <h2>Our Blogs</h2>
+            <button onclick="toggleSection('blog-list')">Show/Hide Blogs</button>
+            <div id="blog-list" style="display:none;">
+                <article>
+                    <h3>Coping with Exam Stress</h3>
+                    <p>Tips on managing stress during exam periods, including time management and relaxation techniques.</p>
+                </article>
+                <article>
+                    <h3>The Importance of Taking Breaks</h3>
+                    <p>Discuss why breaks are essential for productivity and mental health, including methods like the Pomodoro Technique.</p>
+                </article>
+                <article>
+                    <h3>Finding Your Study Style</h3>
+                    <p>Explore different study techniques (visual, auditory, kinesthetic) and help students find what works best for them.</p>
+                </article>
+                <article>
+                    <h3>Handling School Bullying</h3>
+                    <p>Share personal stories and strategies for dealing with bullying, including seeking help and building self-esteem.</p>
+                </article>
+                <article>
+                    <h3>Staying Motivated in School</h3>
+                    <p>Provide strategies for maintaining motivation, setting goals, and celebrating achievements.</p>
+                </article>
+                <article>
+                    <h3>Balancing School and Personal Life</h3>
+                    <p>Tips on how to juggle academic responsibilities with social activities and personal interests.</p>
+                </article>
+                <article>
+                    <h3>Building Resilience</h3>
+                    <p>Discuss the importance of resilience and share personal experiences that highlight overcoming challenges.</p>
+                </article>
+                <article>
+                    <h3>Mindfulness for Students</h3>
+                    <p>Introduce mindfulness techniques, such as meditation and deep breathing, to help students stay focused and calm.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="study-help">
+            <h2>Study Help</h2>
+            <p>Find resources like Cognito, flashcards, and more!</p>
+            <!-- Add links to resources here -->
+        </section>
+
+        <section id="religious-coping">
+            <h2>Religious Coping</h2>
+            <h3>Islamic Verses</h3>
+            <blockquote>
+                <p>“Allah does not burden a soul beyond that it can bear…” (Surah Al-Baqarah 2:286)</p>
+                <p>“For indeed, with hardship [will be] ease...” (Surah Ash-Sharh 94:5-6)</p>
+            </blockquote>
+            <h3>Christian Verses</h3>
+            <blockquote>
+                <p>“Do not be anxious about anything...” (Philippians 4:6-7)</p>
+                <p>“Cast your cares on the Lord and He will sustain you...” (Psalm 55:22)</p>
+            </blockquote>
+        </section>
+
+        <section id="offline-game">
+            <h2>Offline Game: Crossword</h2>
+            <div id="crossword-container">
+                <h3>Fill in the crossword!</h3>
+                <table id="crossword">
+                    <tr>
+                        <td><input type="text" maxlength="1" id="1-1" oninput="nextInput(1, 1)"></td>
+                        <td><input type="text" maxlength="1" id="1-2" oninput="nextInput(1, 2)"></td>
+                        <td><input type="text" maxlength="1" id="1-3" oninput="nextInput(1, 3)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" maxlength="1" id="2-1" oninput="nextInput(2, 1)"></td>
+                        <td><input type="text" maxlength="1" id="2-2" oninput="nextInput(2, 2)"></td>
+                        <td><input type="text" maxlength="1" id="2-3" oninput="nextInput(2, 3)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" maxlength="1" id="3-1" oninput="nextInput(3, 1)"></td>
+                        <td><input type="text" maxlength="1" id="3-2" oninput="nextInput(3, 2)"></td>
+                        <td><input type="text" maxlength="1" id="3-3" oninput="nextInput(3, 3)"></td>
+                    </tr>
+                </table>
+                <p>Clue: 1 Across - The capital of France (3 letters)</p>
+                <p>Clue: 2 Down - A large body of water (3 letters)</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or opinions, feel free to reach out!</p>
+            <form action="mailto:zpsyche7@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Zpsyche. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
